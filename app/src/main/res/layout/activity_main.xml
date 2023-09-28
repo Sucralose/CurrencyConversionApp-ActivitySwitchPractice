@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/currencyappbackground"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:text="Ben's conversion app"
+
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextEuroConversionRate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Enter Euro conversion rate to ILS"
+        android:inputType="numberDecimal"
+        android:background="@color/white"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/editTextUSDConversionRate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Enter USD conversion rate to ILS"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/editTextILSAmount"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Enter ILS amount to convert "
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Convert"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textSize="25dp"
+        />
+
+
+</LinearLayout>
